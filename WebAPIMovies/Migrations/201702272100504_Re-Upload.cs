@@ -3,10 +3,20 @@ namespace WebAPIMovies.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class addedReviewandUser : DbMigration
+    public partial class ReUpload : DbMigration
     {
         public override void Up()
         {
+            CreateTable(
+                "dbo.Movies",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Name = c.String(),
+                        Genre = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
             CreateTable(
                 "dbo.Reviews",
                 c => new
@@ -43,6 +53,7 @@ namespace WebAPIMovies.Migrations
             DropIndex("dbo.Reviews", new[] { "MovieId" });
             DropTable("dbo.Users");
             DropTable("dbo.Reviews");
+            DropTable("dbo.Movies");
         }
     }
 }

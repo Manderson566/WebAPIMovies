@@ -98,7 +98,7 @@ namespace WebAPIMovies.Controllers
             db.Reviews.Remove(review);
             db.SaveChanges();
 
-            return Ok(review);
+            return StatusCode(System.Net.HttpStatusCode.NoContent);
         }
 
         protected override void Dispose(bool disposing)

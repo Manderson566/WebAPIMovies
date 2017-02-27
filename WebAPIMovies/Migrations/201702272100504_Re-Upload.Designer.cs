@@ -7,13 +7,13 @@ namespace WebAPIMovies.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class AddedIcollectionOfReviewsToMovie : IMigrationMetadata
+    public sealed partial class ReUpload : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddedIcollectionOfReviewsToMovie));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(ReUpload));
         
         string IMigrationMetadata.Id
         {
-            get { return "201702272046217_AddedIcollectionOfReviewsToMovie"; }
+            get { return "201702272100504_Re-Upload"; }
         }
         
         string IMigrationMetadata.Source

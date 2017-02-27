@@ -7,13 +7,13 @@ namespace WebAPIMovies.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class addedReviewandUser : IMigrationMetadata
+    public sealed partial class RemovedFKfromReview : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addedReviewandUser));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(RemovedFKfromReview));
         
         string IMigrationMetadata.Id
         {
-            get { return "201702272015011_addedReviewandUser"; }
+            get { return "201702272125017_RemovedFKfromReview"; }
         }
         
         string IMigrationMetadata.Source

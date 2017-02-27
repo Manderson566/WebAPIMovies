@@ -196,21 +196,24 @@
     <Compile Include="Controllers\MovieController.cs" />
     <Compile Include="Controllers\ReviewController.cs" />
     <Compile Include="Controllers\UserController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702271850234_initial.cs" />
-    <Compile Include="Migrations\201702271850234_initial.Designer.cs">
-      <DependentUpon>201702271850234_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201702272100504_Re-Upload.cs" />
+    <Compile Include="Migrations\201702272100504_Re-Upload.Designer.cs">
+      <DependentUpon>201702272100504_Re-Upload.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702272015011_addedReviewandUser.cs" />
-    <Compile Include="Migrations\201702272015011_addedReviewandUser.Designer.cs">
-      <DependentUpon>201702272015011_addedReviewandUser.cs</DependentUpon>
+    <Compile Include="Migrations\201702272112565_RemovedReviewIcollection.cs" />
+    <Compile Include="Migrations\201702272112565_RemovedReviewIcollection.Designer.cs">
+      <DependentUpon>201702272112565_RemovedReviewIcollection.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702272046217_AddedIcollectionOfReviewsToMovie.cs" />
-    <Compile Include="Migrations\201702272046217_AddedIcollectionOfReviewsToMovie.Designer.cs">
-      <DependentUpon>201702272046217_AddedIcollectionOfReviewsToMovie.cs</DependentUpon>
+    <Compile Include="Migrations\201702272121383_AddedReviewIcollection.cs" />
+    <Compile Include="Migrations\201702272121383_AddedReviewIcollection.Designer.cs">
+      <DependentUpon>201702272121383_AddedReviewIcollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702272125017_RemovedFKfromReview.cs" />
+    <Compile Include="Migrations\201702272125017_RemovedFKfromReview.Designer.cs">
+      <DependentUpon>201702272125017_RemovedFKfromReview.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Context.cs" />
@@ -281,14 +284,17 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702271850234_initial.resx">
-      <DependentUpon>201702271850234_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702272100504_Re-Upload.resx">
+      <DependentUpon>201702272100504_Re-Upload.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702272015011_addedReviewandUser.resx">
-      <DependentUpon>201702272015011_addedReviewandUser.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702272112565_RemovedReviewIcollection.resx">
+      <DependentUpon>201702272112565_RemovedReviewIcollection.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702272046217_AddedIcollectionOfReviewsToMovie.resx">
-      <DependentUpon>201702272046217_AddedIcollectionOfReviewsToMovie.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702272121383_AddedReviewIcollection.resx">
+      <DependentUpon>201702272121383_AddedReviewIcollection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702272125017_RemovedFKfromReview.resx">
+      <DependentUpon>201702272125017_RemovedFKfromReview.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
