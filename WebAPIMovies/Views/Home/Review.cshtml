@@ -1,18 +1,21 @@
 ﻿
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Review Page";
 }
+
+<h2>Review</h2>
 
 <script src="http://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="~/Scripts/jqueryMe.js"></script>
 <div class="container">
-    <h4><button id="movieBTN">Movie</button></h4>
+    <h4><button id="reviewBTN">Reviews</button></h4>
     <div class="container">
-        <table class="table-bordered">
+        <table class="table-responsive">
             <thead>
-            <th>Title</th>
+            <th>Review</th>
+            <th>Movie</th>
             </thead>
-            <tbody id="movieTitle"></tbody>
+            <tbody id="movieReview"></tbody>
         </table>
     </div>
 </div>

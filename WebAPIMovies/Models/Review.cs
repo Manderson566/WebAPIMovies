@@ -10,9 +10,12 @@ namespace WebAPIMovies.Models
     {
         public int Id { get; set; }
         public string ReviewText { get; set; }
-        public int MovieId { get; set; }
         public int UserId { get; set; }
-        
+
+        public int MovieId { get; set; }
+        [ForeignKey("MovieId")]
+        public virtual Movie Movie { get; set; }
+
 
     }
 }
